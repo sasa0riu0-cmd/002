@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイブログ</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        /* ヘッダー */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #667eea;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* メインコンテナ */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* 記事カード */
+        .blog-post {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-3px);
+        }
+
+        /* 記事タイトル */
+        .post-title {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+
+        /* 投稿日 */
+        .post-date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* カテゴリタグ */
+        .category {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        /* 記事本文 */
+        .post-content {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* 続きを読むボタン */
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+
+        .read-more:hover {
+            opacity: 0.8;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>📝 マイブログ</h1>
+        <p>日々の学びと発見を記録するブログ</p>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div class="container">
+        <!-- 記事1 -->
+        <article class="blog-post">
+            <h2 class="post-title">AI ツールで作業効率が3倍になった話</h2>
+            <div class="post-date">
+                📅 2026年2月3日
+                <span class="category">テクノロジー</span>
+            </div>
+            <p class="post-content">
+                最近、AI ツールを使い始めてから、コーディングや動画編集の効率が劇的に向上しました。特に自動化ワークフローを組むことで、これまで手作業で1時間かかっていた作業が20分で終わるように。今回は実際に使っているツールと具体的な活用法を紹介します...
+            </p>
+            <a href="#" class="read-more">続きを読む →</a>
+        </article>
+
+        <!-- 記事2 -->
+        <article class="blog-post">
+            <h2 class="post-title">初心者でも作れる！簡単Webサイト制作入門</h2>
+            <div class="post-date">
+                📅 2026年2月1日
+                <span class="category">Web制作</span>
+            </div>
+            <p class="post-content">
+                HTMLとCSSを使って、初めてのWebサイトを作る方法を解説します。プログラミング未経験でも大丈夫！たった1つのファイルで完結するシンプルなサイトから始めて、徐々にステップアップしていきましょう。必要なのはメモ帳とブラウザだけです...
+            </p>
+            <a href="#" class="read-more">続きを読む →</a>
+        </article>
+
+        <!-- 記事3 -->
+        <article class="blog-post">
+            <h2 class="post-title">ゲーミングPCの性能を最大限引き出す設定方法</h2>
+            <div class="post-date">
+                📅 2026年1月28日
+                <span class="category">ゲーム</span>
+            </div>
+            <p class="post-content">
+                高性能なゲーミングPCを買ったのに、なぜかゲームがカクつく...そんな経験ありませんか？実は、初期設定のままだと本来のパフォーマンスが発揮できていない可能性があります。今回は、グラフィック設定からWindows最適化まで、具体的な手順を紹介します...
+            </p>
+            <a href="#" class="read-more">続きを読む →</a>
+        </article>
+
+        <!-- 記事4 -->
+        <article class="blog-post">
+            <h2 class="post-title">動画編集を自動化して時短する方法</h2>
+            <div class="post-date">
+                📅 2026年1月25日
+                <span class="category">動画制作</span>
+            </div>
+            <p class="post-content">
+                YouTubeやSNS用の動画を毎日投稿している人にとって、編集作業は大きな負担です。しかし、テンプレートとバッチ処理を活用すれば、編集時間を大幅に短縮できます。今回は、CapCutやその他のツールを使った自動化ワークフローを解説します...
+            </p>
+            <a href="#" class="read-more">続きを読む →</a>
+        </article>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <p>© 2026 マイブログ - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
